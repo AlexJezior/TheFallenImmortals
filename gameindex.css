@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #DDDDDD;
+    background-color: #080000;
+    font: 80% verdana, arial, sans-serif;
+    cursor:default;
+}
+
+a {
+    color: #00AAFF;
+    text-decoration: none;
+}
+
+input {
+    color: #DDDDDD;
+    background-color: #333333;
+}
+
+select {
+    color: #DDDDDD;
+    background-color: #000000;
+}
+
+textarea {
+    width: 99%;
+    background-color: #000000;
+    color: #DDDDDD;
+}
+
+hr {
+	color: #ffffff;
+	background-color: #ffffff;
+	height: 3px;
+}
+
+p#story {
+    background-image:url('images/DeadTree.png');
+    background-repeat:no-repeat;
+    background-position:bottom;
+    font: 14px serif, oblique;
+}
+
+#headMenu {
+    background-image:url('images/ROIbanner.png');
+    background-repeat:no-repeat;
+    height:53px;
+    border-bottom-style:solid; 
+    border-bottom-color:white; 
+    border-bottom-width:100%;
+    border-bottom-height:5px;
+}
+
+#hand {
+    text-align:right;
+    height:100px;
+}
+
+
+#accommodationArea {
+    bottom:0;
+}
+
+#lognav {
+	position: relative;
+	background-color:transparent;
+    background-image:url('images/lognavArea.png');
+    background-position:left;
+    background-repeat:repeat-y;
+    padding: 5px 20px 0px 20px;
+}
+
+#spacerY {
+	width: 11px;
+	background-color:transparent;
+    background-image:url('images/spacerY.png');
+    background-position:left;
+    background-repeat:repeat-y;
+}
+
+#spacerX {
+	height: 11px;
+	background-color:transparent;
+    background-image:url('images/spacerX.png');
+    background-position:left;
+    background-repeat:repeat-x;
+}
+
+#popupbox{
+  margin: 0; 
+  margin-left: 5px; 
+  margin-top: -25px; 
+  padding-top: 10px; 
+  width: 680px; 
+  height: 300px;
+  overflow:scroll;
+  position: absolute; 
+  background: #FBFBF0; 
+  border: solid #000000 2px; 
+  z-index: 9; 
+  font-family: arial bold; 
+  color: #000000;
+  visibility: hidden; 
+  }

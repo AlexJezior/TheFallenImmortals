@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Fallen Immortals! Online Text-Based MMORPG</title>
+<script src="ajax.js" type="text/javascript"></script>
+<script src="dom.js" type="text/javascript"></script>
+<script src="functions.js" type="text/javascript"></script>
+<script src="homefunctions.js" type="text/javascript"></script>
+<script src="gamefunctions.js" type="text/javascript"></script>
+<script src="chatroomfunctions.js" type="text/javascript"></script>
+<style type="text/css">
+body {
+	background-attachment: scroll;
+	background-color: #000;
+	background-position: right;
+	text-align: right;
+}
+#top {
+	background-image: url(images/Untitled-1_01.gif);
+	height: 209px;
+	width: 1024px;
+	background-repeat: no-repeat;
+	background-color: #000;
+	visibility: visible;
+	position: absolute;
+	left: 40px;
+	top: 0px;
+}
+#leftSide {
+	background-image: url(images/Untitled-1_02.gif);
+	height: 422px;
+	width: 67px;
+	position: absolute;
+	top: 209px;
+	background-color: #000;
+	background-repeat: no-repeat;
+	left: 40px;
+}
+#content {
+	background-color: #000;
+	background-image: url(images/Untitled-1_03.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 367px;
+	width: 879px;
+	left: 107px;
+	top: 209px;
+}
+#rightSide {
+	background-color: #000;
+	background-image: url(images/Untitled-1_04.gif);
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 422px;
+	width: 78px;
+	left: 986px;
+	top: 209px;
+}
+#bottom {
+	background-color: #000;
+	background-image: url(images/Untitled-1_05.gif);
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 55px;
+	width: 879px;
+	left: 107px;
+	top: 576px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #666;
+	text-align: center;
+}
+#homeLink {
+	background-image: url(images/homeLink.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 78px;
+	position: absolute;
+	left: 35px;
+	top: -10px;
+}
+#aboutLink {
+	background-image: url(images/aboutLink.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 90px;
+	position: absolute;
+	left: 130px;
+	top: -10px;
+}
+#updatesLink {
+	background-image: url(images/updatesLink.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 110px;
+	position: absolute;
+	left: 235px;
+	top: -10px;
+}
+#voteLink {
+	background-image: url(images/voteLink.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 75px;
+	position: absolute;
+	left: 360px;
+	top: -10px;
+}
+#contactLink {
+	background-image: url(images/contactLink.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 120px;
+	position: absolute;
+	left: 450px;
+	top: -10px;
+}
+#displayArea {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #CFB164;
+	left: 30px;
+	position: absolute;
+	top: 30px;
+	overflow: auto;
+	right: 20px;
+	bottom: 20px;
+	text-align: left;
+	font-weight: bold;
+	clip: rect(auto,auto,auto,auto);
+}
+#loginForm {
+	border-right-style: none;
+}
+#registerForm {
+	position: absolute;
+	left: 400px;
+	top: 0px;
+	border-left-style: dotted;
+	padding-left: 10px;
+}
+</style>
+</head>
+
+<body>
+	
+<div id="top"></div>
+
+
+<div id="leftSide"></div>
+<div id="content">
+	<a id="homeLink" href="index2.html"></a><a id="aboutLink" href="Javascript: about();"></a><a id="updatesLink" href="Javascript: updates();"></a><a id="voteLink" href="Javascript: votepage();"></a><a id="contactLink" href="Javascript: contact();"></a>
+
+	<div id="displayArea">
+<div id="loginForm">
+            <h3>Login</h3><br />
+            <form name="loginForm" id="loginForm" onsubmit="this.disabled=true;this.value='Submitting...';goLogin();">
+                Username: <input type="text" id="username" /><br />
+                Password: <input type="password" id="password" /><br />
+                <input type="button" id="login" name="login" value="Login" onclick="this.disabled=true;this.value='Submitting...';goLogin();" />
+            </form>
+        </div>
+        <div id="registerForm">
+        	<h3>Register</h3><br />
+            <form name="registrationForm" id="registrationForm" onsubmit="this.disabled=true;this.value='Submitting...';goRegister();">
+            Username: <input type="text" id="usernamereg" maxlength="20" /><br />
+            Password: <input type="password" id="passwordreg" /><br />
+            Password Confirm: <input type="password" id="passwordvreg" /><br />
+            Email(MUST confirm): <input type="text" id="emailreg" /><br />
+            Gender: <select id="genderreg">
+            	<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select><br />
+            Class: <select id="classreg">
+				<option value="Fighter">Fighter</option>
+				<option value="Mage">Mage</option>
+			</select><br />
+            Refferal: <input type="text" id="comrade" value="" readonly /><br />
+            <input type="button" id="register" value="Register" onclick="this.disabled=true;this.value='Submitting...';goRegister();" />
+        </div>
+    </div>    
+</div>
+<div id="rightSide"></div>
+
+
+<div id="bottom">Copyright © 2010, Alexander J Jezior (Ajezior).<br />We encourage you to take a look at Privacy Policy and Terms And Conditions before browsing this site.</div>
+
+</body>
+</html>

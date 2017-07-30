@@ -1,0 +1,3 @@
+<?PHP
+print"Thank you for logging in today!<b><u>CHAT AND GAME RULES:</u></b></br>-No foul language in the chat.</br>-No cheat of any kind.(Example: Macros, game bugs exploits)</br>-ALL bugs found must be reported to the Forum page.</br>-Staff members always make the right decision. This means DO NOT argue with them.</br>-Please don\'t talk about other games here. If you would like to advertise here please contact the username Ajezior.<br /><br />Thanks for reading over these guidelines and I wish you a great day.";
+?>

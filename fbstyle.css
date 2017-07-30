@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #DDDDDD;
+    background-color: #888888;
+    font: 80% verdana, arial, sans-serif;
+    cursor:default;
+}
+
+a {
+    color: #00AAFF;
+    text-decoration: none;
+}
+
+input {
+    color: #DDDDDD;
+    background-color: #032b11;
+}
+
+select {
+    color: #DDDDDD;
+    background-color: #000000;
+}
+
+textarea {
+    width: 99%;
+    background-color: #032b11;
+    color: #DDDDDD;
+}
+
+p#story {
+    background-image:url('images/DeadTree.png');
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+#headMenu {
+    border-bottom-style:solid; 
+    border-bottom-color:black; 
+    border-bottom-width:100%;
+}
+
+#hand {
+    background-image:url('images/Hand.png');
+    background-position:right;
+    background-repeat:no-repeat;
+    text-align:right;
+    height:100px;
+}
+
+#charinfo {
+	background-color:transparent;
+    background-image:url('images/charinfoBKG.png');
+    background-position:left;
+    background-repeat:no-repeat;
+    text-align:left;
+}
+
+#accommodationArea {
+    bottom:0;
+}
+
+#lognav {
+	position: relative;
+	background-color:transparent;
+    background-image:url('images/lognavArea.png');
+    background-position:left;
+    background-repeat:repeat-y;
+    padding: 5px 20px 0px 20px;
+}
+
+#spacerY {
+	width: 11px;
+	background-color:transparent;
+    background-image:url('images/spacerY.png');
+    background-position:left;
+    background-repeat:repeat-y;
+}
+
+#spacerX {
+	height: 11px;
+	background-color:transparent;
+    background-image:url('images/spacerX.png');
+    background-position:left;
+    background-repeat:repeat-x;
+}
