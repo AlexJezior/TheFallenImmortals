@@ -1,0 +1,19 @@
+ip: 192.168.10.11
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: C:\Users\ajezi/.ssh/id_rsa
+keys:
+    - C:\Users\ajezi/.ssh/id_rsa
+folders:
+    -
+        map: 'C:\Users\ajezi\Documents\Repositories\TheFallenImmortals_OLD'
+        to: /home/vagrant/TheFallenImmortals_OLD
+sites:
+    -   map: fallenimmortals.old
+        to: /home/vagrant/TheFallenImmortals_OLD
+        php: "5.6"
+databases:
+    - homestead
+name: thefallenimmortals-old
+hostname: thefallenimmortals-old

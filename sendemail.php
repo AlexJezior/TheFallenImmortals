@@ -31,7 +31,7 @@ while($whom = mysql_fetch_assoc($findCharacters)){
 </head><body>
 	<table width=\"95%\" border=\"3\" align=\"center\">
 	  <tr>
-	    <th scope=\"row\">".$hmph."<div align=\"left\"><a href=\"http://www.thefallenimmortals.com\"><img src='http://thefallenimmortals.com/images/Untitled-1_01.gif'></a>
+	    <th scope=\"row\">".$hmph."<div align=\"left\"><a href=\"http://www.thefallenimmortals.com\"><img src='http://fallenimmortals.old/images/Untitled-1_01.gif'></a>
 	      </div>
 	      <h2 align=\"left\"><strong><u>!!!HOLIDAY BONUS!!!</u></strong></h2>
 	      <div align=\"left\">

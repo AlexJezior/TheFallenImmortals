@@ -7,5 +7,5 @@
     $display = "Logging you out...";
     print("fillDiv('displayArea','".$display."');");
     session_unset(); 
-    print("window.location = 'http://thefallenimmortals.com/';");
+    print("window.location = 'http://fallenimmortals.old/';");
 ?>
